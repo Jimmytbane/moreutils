@@ -15,7 +15,6 @@
 =end
 
 trap "SIGINT" do
-  system "clear"
   abort
 end
 
