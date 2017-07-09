@@ -24,7 +24,7 @@ system "sleep 1"
 printf "."
 sleep 1
 printf "."
-system "sleep 1"
+sleep 1
 printf "."
 printf "  "
 system "curl ipv6.icanhazip.com"
