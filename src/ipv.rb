@@ -15,5 +15,5 @@
 =end
 
 puts "ipv usage is easy :)"
-puts "\n"
+puts nil
 puts "Type ipv4 or ipv6 in your console, simple as that"
