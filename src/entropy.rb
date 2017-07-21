@@ -14,6 +14,8 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
-printf "Linux entropy --> " 
-system "cat /proc/sys/kernel/random/entropy_avail"
+
+entropy = `cat /proc/sys/kernel/random/entropy_avail`
+
+puts "Linux entropy: -->  #{entropy}"
 
