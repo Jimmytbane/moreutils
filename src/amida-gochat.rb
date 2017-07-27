@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 =begin
    Copyright (C) <2017>  <jimmybot@teknik.io>
@@ -14,5 +14,4 @@
    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 =end
 
-nick = : `whoami`
-system "ssh -p 2022 #{nick}@projectcrystal.site"
+system "ssh -p 2022 `whoami`@projectcrystal.site"

@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 =begin
    Copyright (C) <2017>  <jimmybot@teknik.io>
@@ -11,31 +11,9 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU Affero General Public License for more details.
    You should have received a copy of the GNU Affero General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 =end
 
-trap "SIGINT" do
-  abort
-end
-
-require "io/console"
 require "securerandom"
 
-output = `cat /proc/sys/kernel/random/entropy_avail`
-
-puts "Ruby can only generate a good password for you if the system"
-puts "you're using has high entropy.To avoid people using a would be good method to generate poor passwords,"
-puts "please confirm the following number: --> #{output}(your Linux kernel entropy value) is GREATER THAN 2000 by pressing y or n here:"
-
-answer1 = STDIN.getch
-
-if answer1 == "y" 
-	
-	puts "high entropy confirmed"
-  
-	puts SecureRandom.base64(15)
-  
-elsif answer1 == "n"
-    abort  
-end
-type 
+puts SecureRandom.base64(15)
