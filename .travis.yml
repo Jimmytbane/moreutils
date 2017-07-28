@@ -2,3 +2,5 @@ language: ruby
 rvm:
  - jruby
  - ruby
+jdk:
+- openjdk9
