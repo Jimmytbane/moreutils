@@ -3,4 +3,4 @@ rvm:
  - jruby
  - ruby
 jdk:
-- openjdk9
+- openjdk8
