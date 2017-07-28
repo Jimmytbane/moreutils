@@ -27,7 +27,7 @@ if (lignux == "linux")
     I'd like to interject for a moment-- 
     what you've referred to as a #{lignux} is in fact, GNU/#{lignux}
     or, as I've recently taken to calling it, GNU plus #{lignux}"
-elsif (lignux == "gnu/linux")
+elsif (lignux == "gnu/linux"|| lignux == "gnu plus linux" || lignux == "gnu + linux")
     puts "That's right!"
 else
     puts "#{lignux} is not the number on server OS in the world..."
