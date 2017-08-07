@@ -26,4 +26,8 @@ printf "."
 sleep 1
 printf "."
 printf "  "
-system "curl ipv4.icanhazip.com"
+	if #{RUBY_PLATFORM} == "x64-mingw32"
+		system "powershell (curl ipv4.icanhazip.com).content"
+	else
+		system "curl ipv4.icanhazip.com"
+	end
