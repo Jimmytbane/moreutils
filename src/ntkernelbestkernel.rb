@@ -21,7 +21,7 @@ end
 puts "What is the best kernel of all time"
 printf "Input your reponse:  "
 input1 = gets.chomp.downcase
-	if input1 == "NT"
+	if (input1 == "NT" || input1 == "NT kernel")
 		puts "NT KERNEL BEST KERNEL"
 	else
 		puts "What are you talking about? NT KERNEL BEST KERNEL" 
