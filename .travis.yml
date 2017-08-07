@@ -1,6 +1,0 @@
-language: ruby
-rvm:
- - jruby
- - ruby
-jdk:
-- openjdk8
