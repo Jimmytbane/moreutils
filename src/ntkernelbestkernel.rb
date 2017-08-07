@@ -14,6 +14,10 @@
    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 =end
 
+trap "SIGINT" do
+  abort
+end
+
 puts "What is the best kernel of all time"
 printf "Input your reponse:  "
 input1 = gets.chomp.downcase
